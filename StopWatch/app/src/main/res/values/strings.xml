@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="edit_message">Que deseas hacer</string>
+    <string name="button_send">Vamos a React !!</string>
+</resources>
