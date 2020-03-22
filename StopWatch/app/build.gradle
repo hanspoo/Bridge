@@ -27,7 +27,7 @@ android {
 
 project.ext.react = [
         entryFile: "index.js",
-        root: "/home/hans/falabella/Bridge/stopwatch",
+        root: "$rootDir/../stopwatch",
         enableHermes: true,  // clean and rebuild if changing
 ]
 
@@ -41,9 +41,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.facebook.react:react-native:+' //Added Dependency
 
-    debugImplementation files("/home/hans/falabella/Bridge/stopwatch/node_modules/hermes-engine/android/hermes-debug.aar")
+    debugImplementation files("$rootDir/../stopwatch/node_modules/hermes-engine/android/hermes-debug.aar")
 //    qaReleaseImplementation files("../../node_modules/hermes-engine/android/hermes-release.aar")
-    releaseImplementation files("/home/hans/falabella/Bridge/stopwatch/node_modules/hermes-engine/android/hermes-release.aar")
+    releaseImplementation files("$rootDir/../stopwatch/node_modules/hermes-engine/android/hermes-release.aar")
 
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
