@@ -1,4 +1,4 @@
-package com.stopwatch;
+package com.piechart;
 
 import android.app.Application;
 
@@ -8,8 +8,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.stopwatch.device.DevicePackage;
-import com.stopwatch.generated.BasePackageList;
+import com.piechart.generated.BasePackageList;
 
 import org.unimodules.adapters.react.ReactAdapterPackage;
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
@@ -39,7 +38,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
-      packages.add(new DevicePackage());
+      packages.add(new PieChartPackage());
       return packages;
     }
 
