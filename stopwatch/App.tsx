@@ -7,10 +7,14 @@ export default function App() {
 
   console.log(NativeModules);
   const cargarName = () =>
-    NativeModules.Device.getDeviceName((error, name) => {
+    NativeModules.DeviceInfoModule.getDeviceName((error, name) => {
       if (error) setName(`Error ${error}`);
       else setName(name);
     });
+
+  const cargarHomeNativo = () => {
+    NativeModules.ComenzarActividadModule.cargarHome();
+  };
   return (
     <View style={styles.container}>
       <Text style={{ fontWeight: "bold" }}>Bienvenido a React!</Text>
@@ -21,6 +25,9 @@ export default function App() {
       </View>
 
       <Text>Modelo es: {name}</Text>
+      <View style={{ marginTop: 14, marginBottom: 14 }}>
+        <Button title="Cargar home nativo" onPress={cargarHomeNativo} />
+      </View>
     </View>
   );
 }

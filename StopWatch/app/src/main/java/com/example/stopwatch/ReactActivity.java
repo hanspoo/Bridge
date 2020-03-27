@@ -1,11 +1,11 @@
 package com.example.stopwatch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
+import com.example.stopwatch.modulosReact.ComenzarActividadPackager;
+import com.example.stopwatch.modulosReact.DeviceInfoPackager;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
@@ -30,6 +30,8 @@ public class ReactActivity extends Activity implements DefaultHardwareBackBtnHan
                 .setBundleAssetName("index.android.bundle")
                 .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
+                .addPackage(new DeviceInfoPackager())
+                .addPackage(new ComenzarActividadPackager())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();

@@ -26,8 +26,8 @@ android {
 }
 
 project.ext.react = [
-        entryFile: "index.js",
-        root: "$rootDir/../stopwatch",
+        entryFile   : "index.js",
+        root        : "$rootDir/../stopwatch",
         enableHermes: true,  // clean and rebuild if changing
 ]
 
@@ -36,6 +36,11 @@ dependencies {
     implementation "org.webkit:android-jsc:r241213"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.2.1'
+    implementation 'androidx.navigation:navigation-ui:2.2.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -54,4 +59,3 @@ configurations.all {
         force "com.facebook.soloader:soloader:0.8.2"
     }
 }
-
