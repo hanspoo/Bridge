@@ -13,21 +13,25 @@ Proyecto creado con android estudio, crea una actividad, al presionar el botón 
 
 Antes de usar:
 
-git clone https://github.com/hanspoo/Bridge
 
 
 ```
+cd /tmp
+git clone https://github.com/hanspoo/Bridge
+cd Bridge
 cd stopwatch
 yarn install
 yarn start
-adb reverse tcp:8081 tcp:8081
 ```
 
 En el caso del proyecto android se puede importar y lanzar desde android estudio o hacer:
 
 ```
+cd /tmp/Bridge
 cd StopWatch
+adb reverse tcp:8081 tcp:8081
 ./gradlew installDebug
+adb shell am start -n com.example.stopwatch/.MainActivity
 ```
 
 El nombre Bridge viene de hacer un puente entre android nativo y react.
