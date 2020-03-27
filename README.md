@@ -14,17 +14,17 @@ Proyecto creado con android estudio, crea una actividad, al presionar el botón 
 Antes de usar:
 
 
+Levantar el packager
+
 
 ```
 cd /tmp
 git clone https://github.com/hanspoo/Bridge
-cd Bridge
-cd stopwatch
+cd Bridge/stopwatch
 yarn install
 yarn start
 ```
-
-En el caso del proyecto android se puede importar y lanzar desde android estudio o hacer:
+En otro terminal levantar android. También lo pueden importar y lanzar desde android estudio o hacer:
 
 ```
 cd /tmp/Bridge
