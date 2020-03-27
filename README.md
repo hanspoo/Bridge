@@ -1,7 +1,7 @@
 
 # Bridge (Puente)
 
-POC, llamar vista react native desde un proyecto android nativo, y luego llamar un módulo react nativo para obtener el modelo del celular, y de la página react ir a la actividad principal.
+Llamar vista react native desde un proyecto android nativo, y luego llamar un módulo react nativo (desde react) para obtener el modelo del celular, luego continuar a la página nativa principal.
 
 Carpetas:
 
